@@ -19,7 +19,7 @@ mix.sass('src/app.scss', 'dist/')
     })
     .browserSync({
         proxy: 'localhost:8080',
-        files: ['index.html', 'dist/*.*']
+        files: ['*.html', 'dist/*.*']
     });
 
 // Full API
