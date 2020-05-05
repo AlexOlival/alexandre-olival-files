@@ -6,30 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="Description" content="Personal webpage for Alexandre Olival">
-    <title>Alexandre Olival</title>
+    <title>Alexandre Olival | Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
 </head>
 
 <body class="bg-gray-900 antialiased font-body">
-    <div class="flex flex-col px-12 py-8 mx-auto items-center text-center">
+    <div class="flex flex-col px-12 py-8 mx-auto items-center">
         <nav class="flex justify-between w-64 text-gray-500 uppercase text-lg items-center">
             <a href="/" class="hover:text-gray-100">Bio</a>
             <a href="/projects" class="hover:text-gray-100">Projects</a>
             <a href="/contact" class="text-gray-100 hover:text-gray-100">Contact</a>
         </nav>
-        <main class="mt-16 max-w-2xl">
+        <main class="mt-16 max-w-2xl text-center">
             <div class="mt-1">
                 <h1 class="text-5xl font-bold text-gray-100 leading-none tracking-wide">Contact</h1>
             </div>
-            <div class="mt-12">
-                
+            <div class="flex flex-col mt-12">
+                <div class="font-light text-2xl text-white">
+                    <p>
+                        You can reach out to me on 
+                        <a href="https://twitter.com/lex_olival" class="text-teal-300 font-medium underline"
+                            rel="noopener">Twitter</a> or 
+                        <a href="https://linkedin.com/in/alexolival" class="text-teal-300 font-medium underline"
+                            rel="noopener">LinkedIn</a>.
+                    </p>
+                    <p>Alternatively, send me a message using the form below:</p>
+                </div>
+                <div class="text-xl">
+                    <form class="mt-8" action="https://formspree.io/xpzyzrgz" method="post">
+                        <div class="flex flex-col justify-start">
+                            <label class="text-white" for="name">Your message:</label>
+                            <textarea class="p-2 mt-2 bg-gray-400 resize-none rounded" id="name" name="name" cols="30" rows="10" required></textarea>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="_replyto">Your email:</label>
+                            <div class="flex mt-2 justify-between">
+                                <input class="p-2 bg-gray-400 rounded" type="email" name="_replyto" required>
+                                <button class="rounded px-8 border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form action="https://formspree.io/xpzyzrgz" method="POST">
-                <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <button>Submit</button>
-            </form>
         </main>
     </div>
 </body>
