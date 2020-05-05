@@ -33,21 +33,19 @@
                     </p>
                     <p>Alternatively, send me a message using the form below:</p>
                 </div>
-                <div class="text-xl">
-                    <form class="mt-8" action="https://formspree.io/xpzyzrgz" method="post">
-                        <div class="flex flex-col justify-start">
-                            <label class="text-white" for="name">Your message:</label>
-                            <textarea class="p-2 mt-2 bg-gray-400 resize-none rounded" id="name" name="name" cols="30" rows="10" required></textarea>
+                <form class="flex flex-col mt-8 w-full" action="https://formspree.io/xpzyzrgz" method="post">
+                    <div class="flex flex-col justify-start">
+                        <label class="text-lg text-white" for="name">Your message:</label>
+                        <textarea class="p-2 mt-2 h-40 w-full md:w-full bg-gray-400 resize-none rounded" id="name" name="name" required></textarea>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="text-lg text-white" for="_replyto">Your email:</label>
+                        <div class="flex mt-2 justify-between">
+                            <input class="p-2 w-40 md:w-full bg-gray-400 rounded" type="email" name="_replyto" required>
+                            <button class="ml-2 px-8 rounded border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900">Send</button>
                         </div>
-                        <div class="flex flex-col mt-4">
-                            <label class="text-white" for="_replyto">Your email:</label>
-                            <div class="flex mt-2 justify-between">
-                                <input class="p-2 bg-gray-400 rounded" type="email" name="_replyto" required>
-                                <button class="rounded px-8 border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </main>
     </div>
