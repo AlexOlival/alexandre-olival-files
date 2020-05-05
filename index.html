@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="Description" content="Personal webpage for Alexandre Olival">
     <title>Alexandre Olival | Bio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap">
     <link rel="stylesheet" href="dist/app.css">
 </head>
 
@@ -24,7 +24,11 @@
                     <h1 class="text-5xl font-bold text-gray-100 leading-none tracking-wide">Alexandre Olival</h1>
                 </div>
                 <span class="flex mx-auto mt-6 border-4 border-teal-400 items-center rounded-full overflow-hidden">
-                    <img class="h-48 object-cover" src="img/avatar.webp" alt="Photo of Alexandre Olival">
+                    <picture>
+                        <source srcset="img/avatar.webp" type="image/webp">
+                        <source srcset="img/avatar.jp2" type="image/jp2">
+                        <img class="h-48 object-cover" src="img/avatar.webp" alt="Photo of Alexandre Olival">
+                    </picture>
                 </span>
             </div>
             <div class="flex flex-col mt-6 max-w-2xl text-left font-light text-2xl text-white">
